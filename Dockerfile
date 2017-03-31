@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 RUN apt-get update && apt-get install -qq default-jdk iperf expect
 
-ADD https://dl.ubnt.com/aircontrol2/aircontrol-v2.0.1.2325.170130.0936-unix64.bin /tmp/aircontrol.bin
+ADD http://www.ubnt.com/downloads/aircontrol2/aircontrol-v2.1-Beta4.2212.170323.1619-unix64.bin /tmp/aircontrol.bin
 ADD script.exp /tmp/script.exp
 
 RUN cd /tmp && \
